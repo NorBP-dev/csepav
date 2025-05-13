@@ -1,0 +1,227 @@
+/* Alapstílusok */
+/* Alap betűtípus beállítása az egész oldalra, alap háttérszín, margók törlése */
+body {
+  font-family: "Outfit", sans-serif; /* Az "Outfit" betűtípus használata */
+  font-optical-sizing: auto;         /* Automatikus optikai méretezés */
+  font-weight: 400;                  /* Normál vastagság */
+  font-style: normal;                /* Normál stílus (nem dőlt) */
+  margin: 0;                         /* Külső margók eltávolítása */
+  padding: 0;                        /* Belső margók eltávolítása */
+  background-color: #f4f4f4;         /* Világosszürke háttérszín */
+}
+/* Navigációs menü fixálása a tetején */
+.navbar {
+  background-color: #333;            /* Sötétszürke háttér */
+  color: white;                      /* Fehér szöveg */
+  padding: 10px;                     /* Belső margó */
+  position: fixed;                   /* Rögzítés a képernyő tetejére */
+  top: 0;                            /* A tetejéhez igazítás */
+  left: 0;                           /* A bal oldalhoz igazítás */
+  width: 100%;                       /* A teljes szélesség */
+  z-index: 1000;                     /* Magas z-index, hogy más elemek ne takarják */
+}
+
+/* A navigáció alatti tartalom eltolása, hogy ne takarja el a menü */
+body {
+  padding-top: 80px;                 /* Az oldal tartalmát eltoljuk a menü magasságával */
+}
+
+/* Fejlécek (h1, h2) középre igazítása és szín beállítása */
+h1, h2 {
+  text-align: center;                /* Középre igazítás */
+  color: #333;                       /* Sötétszürke szövegszín */
+}
+
+/* Navigációs menü */
+/* Navigáció háttérszínének, szövegszínének és belső margójának beállítása */
+.navbar {
+  background-color: #333;            /* Sötétszürke háttér */
+  color: white;                      /* Fehér szöveg */
+  padding: 10px;                     /* Belső margó */
+}
+
+/* Navigációs lista stílus: eltávolítja a felsorolás jeleit, középre igazítja */
+.navbar ul {
+  list-style: none;                  /* Nincs lista jelölő */
+  padding: 0;                        /* Nincs belső margó */
+  text-align: center;                /* Középre igazítás */
+}
+
+/* Listaelemek vízszintes elhelyezése, külső margóval */
+.navbar li {
+  display: inline-block;             /* Vízszintesen egymás mellé kerülnek */
+  margin: 0 20px;                    /* Két oldalra 20px margó */
+}
+
+/* Linkek színe és stílusa a navigációban */
+.navbar a {
+  color: white;                      /* Fehér színű link */
+  text-decoration: none;             /* Nincs aláhúzás */
+  font-size: 18px;                   /* Betűméret */
+}
+
+/* Hover effekt – link aláhúzása, ha fölé viszik az egeret */
+.navbar a:hover {
+  text-decoration: none;        /* Aláhúzás hover-re */
+}
+
+/* Kategóriák címének stílusa a főoldalon */
+section h2 {
+  margin-top: 30px;                  /* Felső margó */
+  font-size: 24px;                   /* Betűméret */
+  color: #2c3e50;                    /* Sötétkékes szürke szín */
+}
+
+/* Kategóriacímek linkjeinek stílusa (gomb kinézet) */
+section h2 a {
+  text-decoration: none;             /* Nincs aláhúzás */
+  color: #f8f8f8;                    /* Világos szöveg */
+  padding: 10px 20px;                /* Gomb belső térköz */
+  background-color: #727374;         /* Gomb háttérszíne */
+  border-radius: 5px;                /* Lekerekített sarkok */
+  transition: background-color 0.3s; /* Animált háttérváltás */
+}
+
+/* Hover effekt – gomb sötétebb színre vált */
+section h2 a:hover {
+  background-color: #5f676d;         /* Hover szín */
+}
+
+/* Hirdetési csempék konténere: rugalmas elrendezés, igazítás, térköz */
+.grid-container {
+  display: flex;                     /* Flexbox elrendezés */
+  flex-wrap: wrap;                   /* Több sorba törés */
+  justify-content: center;          /* Középre igazítás */
+  gap: 20px;                         /* Elemek közti térköz */
+  padding: 20px;                     /* Belső margó */
+  max-width: 1200px;                 /* Maximális szélesség */
+  margin: 0 auto;                    /* Középre igazítás (vízszintesen) */
+}
+
+/* Egy hirdetési csempe (tile) stílusa */
+.ad-tile {
+  text-decoration: none; /* Tilos az aláhúzás */
+  color: inherit; /* Az öröklött szín használata */
+  background-color: rgb(255, 255, 255);          /* Fehér háttér */
+  border-radius: 8px;               /* Lekerekített sarkok */
+  padding: 15px;                    /* Belső margó */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Árnyék a doboz körül */
+  text-align: center;               /* Középre igazított szöveg */
+  width: 100%;                      /* Teljes szélesség */
+  max-width: 200px;                 /* Max. szélesség – csempe méret */
+}
+
+/* Csempe képek stílusa */
+.ad-tile img {
+  max-width: 100%;                  /* Kép ne legyen nagyobb a konténernél */
+  height: auto;                     /* Arányos méret megtartása */
+  border-radius: 8px;               /* Lekerekített kép sarkok */
+}
+
+/* Termék neve (h3) stílusa */
+.ad-tile h3 {
+  font-size: 20px;                  /* Betűméret */
+  margin: 20px 0;                   /* Függőleges margó */
+  
+}
+
+/* Ár stílusa */
+.ad-tile .price {
+  font-size: 20px;                  /* Betűméret */
+  color: #8c3ce7;                   /* Piros ár (figyelemfelkeltő) */
+}
+
+/* Leírás stílusa */
+.ad-tile .description {
+  font-size: 20px;                  /* Betűméret */
+  color: #7f8c8d;                   /* Szürkés leírás */
+}
+
+/* Hover effekt a csempére – enyhe felugrás és árnyék */
+.ad-tile:hover {
+  transform: translateY(-5px);      /* Felemeli a csempét */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Erősebb árnyék */
+  transition: all 0.3s ease-in-out; /* Animált átmenet */
+}
+
+/* Mobilbarát kialakítás */
+/* 768px-nél kisebb képernyőkre (tablet és mobil) */
+@media (max-width: 768px) {
+  .navbar ul {
+    padding: 0;
+    text-align: center;             /* Menü elemek középre igazítása */
+  }
+
+  .navbar li {
+    display: block;                 /* Menüpontok egymás alá kerülnek */
+    margin: 10px 0;                 /* Függőleges margó */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* Két oszlopos rács – de nem érvényes flex esetén! */
+  }
+
+  .ad-tile {
+    padding: 10px;                  /* Kevesebb belső tér mobilon */
+  }
+
+  .ad-tile h3 {
+    font-size: 18px;                /* Kisebb cím */
+  }
+
+  .ad-tile .price {
+    font-size: 16px;                /* Kisebb ár */
+  }
+
+  .ad-tile .description {
+    font-size: 14px;                /* Kisebb leírás */
+  }
+}
+
+/* 480px-nél kisebb képernyőkre (kisebb mobilok) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;     /* Egy oszlopos elrendezés – DE ez csak grid esetén működik */
+  }
+}
+
+.ad-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-form label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.ad-form input,
+.ad-form select,
+.ad-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ad-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ad-form button:hover {
+  background-color: #1a252f;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Hirdetés részletek</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Hirdetés részletezés stílus */
+    .ad-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .ad-detail img {
+      max-width: 30%; /* Kisebb kép, ha nem kattintanak rá */
+      height: auto;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .ad-detail img:hover {
+      transform: scale(1.05); /* Kép nagyítás hover effekt */
+    }
+
+    /* A nagy kép modálja (lightbox) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .modal:target {
+      display: flex;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigáció -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="butor.html">Bútor</a></li>
+      <li><a href="ingatlan.html">Ingatlan</a></li>
+      <li><a href="jarmu.html">Jármű</a></li>
+      <li><a href="elektronika.html">Elektronika</a></li>
+      <li><a href="uj-hirdetes.html">Új hirdetés</a></li>
+    </ul>
+  </nav>
+
+  <h1>Hirdetés részletei</h1>
+  
+  <!-- Hirdetés részletek -->
+  <div class="ad-detail">
+    <a href="#modal1" id="imageLink">
+      <img src="img/bútor.jpg" alt="Fotel">
+    </a>
+    <h3>Fotel</h3>
+    <p class="price">8 000 Ft</p>
+    <p class="short-description">Kényelmes fotel, foltmentes állapotban.</p>
+    <p class="full-description">Részletes leírás: Kiváló állapotú fotel, masszív vázzal, otthonról dolgozóknak ideális.</p>
+    <!-- További hirdetés részletek itt -->
+  </div>
+
+  <!-- Modal (nagy kép) -->
+  <div id="modal1" class="modal">
+    <span class="modal-close"><a href="#">×</a></span>
+    <img src="img/bútor.jpg" alt="Fotel nagyban">
+  </div>
+
+</body>
+</html>

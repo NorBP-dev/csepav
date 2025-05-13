@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingyenes Adok-Veszek</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Firebase SDK-k -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+<!-- A saját inicializáló fájlod -->
+<script src="firebase-init.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigáció -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="butor.html">Bútor</a></li>
+      <li><a href="ingatlan.html">Ingatlan</a></li>
+      <li><a href="jarmu.html">Jármű</a></li>
+      <li><a href="elektronika.html">Elektronika</a></li>
+      <li><a href="uj-hirdetes.html">Új hirdetés</a></li>
+    </ul>
+  </nav>
+
+  <h1>Ingyenes Adok-Veszek</h1>
+
+  <!-- Bútor kategória -->
+  <section>
+    <h2><a href="butor.html">Bútor</a></h2>
+    <div class="grid-container">
+      <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+       <div class="ad-tile">
+        <img src="img/bútor.jpg" alt="Fotel">
+        <h3>Fotel</h3>
+        <p class="price">8 000 Ft</p>
+        <p class="description">Kényelmes fotel, foltmentes állapotban.</p>
+      </div>
+      
+      <!-- További hirdetések -->
+    </div>
+  </section>
+
+  <!-- Ingatlan kategória -->
+  <section>
+    <h2><a href="ingatlan.html">Ingatlan</a></h2>
+    <div class="grid-container">
+      <div class="ad-tile">
+        <img src="img/ingatlan.jpg" alt="Lakás">
+        <h3>Eladó lakás</h3>
+        <p class="price">32 000 000 Ft</p>
+        <p class="description">2 szobás lakás belvárosban, erkélyes.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/ingatlan.jpg" alt="Lakás">
+        <h3>Eladó lakás</h3>
+        <p class="price">32 000 000 Ft</p>
+        <p class="description">2 szobás lakás belvárosban, erkélyes.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/ingatlan.jpg" alt="Lakás">
+        <h3>Eladó lakás</h3>
+        <p class="price">32 000 000 Ft</p>
+        <p class="description">2 szobás lakás belvárosban, erkélyes.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/ingatlan.jpg" alt="Lakás">
+        <h3>Eladó lakás</h3>
+        <p class="price">32 000 000 Ft</p>
+        <p class="description">2 szobás lakás belvárosban, erkélyes.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/ingatlan.jpg" alt="Lakás">
+        <h3>Eladó lakás</h3>
+        <p class="price">32 000 000 Ft</p>
+        <p class="description">2 szobás lakás belvárosban, erkélyes.</p>
+      </div>
+      
+
+      <!-- További hirdetések -->
+    </div>
+  </section>
+
+  <!-- Jármű kategória -->
+  <section>
+    <h2><a href="jarmu.html">Jármű</a></h2>
+    <div class="grid-container">
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/jarmu.jpg" alt="Bicikli">
+        <h3>Használt Bicikli</h3>
+        <p class="price">25 000 Ft</p>
+        <p class="description">MTB, új gumikkal, jó állapot.</p>
+      </div>
+
+      <!-- További hirdetések -->
+    </div>
+  </section>
+
+  <!-- Elektronika kategória -->
+  <section>
+    <h2><a href="elektronika.html">Elektronika</a></h2>
+    <div class="grid-container">
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      <div class="ad-tile">
+        <img src="img/pc.jpeg" alt="Hűtőszekrény">
+        <h3>Hűtőszekrény</h3>
+        <p class="price">Ingyen elvihető</p>
+        <p class="description">Régi, működik, csak hangos.</p>
+      </div>
+      
+      <!-- További hirdetések -->
+    </div>
+  </section>
+
+</body>
+</html>

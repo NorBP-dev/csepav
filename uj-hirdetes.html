@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Új hirdetés feladása</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="butor.html">Bútor</a></li>
+      <li><a href="ingatlan.html">Ingatlan</a></li>
+      <li><a href="jarmu.html">Jármű</a></li>
+      <li><a href="elektronika.html">Elektronika</a></li>
+      <li><a href="uj-hirdetes.html">Új hirdetés</a></li>
+    </ul>
+  </nav>
+
+  <h1>Új hirdetés feladása</h1>
+
+  <form class="ad-form" action="#" method="POST" enctype="multipart/form-data">
+    <label for="title">Hirdetés címe:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="price">Ár:</label>
+    <input type="number" id="price" name="price" required>
+
+    <label for="category">Kategória:</label>
+    <select id="category" name="category" required>
+      <option value="butor">Bútor</option>
+      <option value="ingatlan">Ingatlan</option>
+      <option value="jarmu">Jármű</option>
+      <option value="elektronika">Elektronika</option>
+    </select>
+
+    <label for="shortDescription">Rövid leírás (csempén jelenik meg):</label>
+    <textarea id="shortDescription" name="shortDescription" rows="2" maxlength="100" required></textarea>
+
+    <label for="description">Részletes leírás:</label>
+    <textarea id="description" name="description" rows="5" required></textarea>
+
+
+    <label for="image">Kép feltöltése:</label>
+    <input type="file" id="image" name="image" accept="image/*" required>
+
+    <button type="submit">Hirdetés feladása</button>
+  </form>
+  <!-- Üzenet a fájl feltöltésének állapotáról -->
+<div id="upload-status"></div>
+
+
+</body>
+</html>
