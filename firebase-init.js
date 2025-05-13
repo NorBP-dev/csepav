@@ -1,25 +1,17 @@
-// firebase-init.js
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Importálás csak akkor kell, ha modulként futtatod (pl. Webpack vagy Vite esetén)
-// Ha sima HTML + JS projekted van, akkor az alábbi sorokat NE írd bele:
-
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-
-// Firebase konfiguráció
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBLLzBWxSaEQycubfUlHtIXoszxeQXl-3Y",
-  authDomain: "csepav.firebaseapp.com",
-  projectId: "csepav",
-  storageBucket: "csepav.firebasestorage.app",
-  messagingSenderId: "997488377575",
-  appId: "1:997488377575:web:45d3900ccd2a2db9142c42",
-  measurementId: "G-QY3VQ403BF"
+  apiKey: "AIzaSyCgsB5Kf8V-ZXFguOZRNaV0Hg97Jriajdo",
+  authDomain: "csepav-fc95c.firebaseapp.com",
+  projectId: "csepav-fc95c",
+  storageBucket: "csepav-fc95c.firebasestorage.app",
+  messagingSenderId: "421814714162",
+  appId: "1:421814714162:web:5dd4261b47766c3078212b"
 };
 
-// Firebase inicializálása
-const app = firebase.initializeApp(firebaseConfig);
-
-// Firebase Storage és Firestore referenciák
-const storage = firebase.storage();
-const firestore = firebase.firestore();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
